@@ -14,7 +14,9 @@ GameObject:
   - component: {fileID: 3323610079019882294}
   - component: {fileID: 3116074216241813849}
   - component: {fileID: 2358121893531882136}
+
   m_Layer: 8
+
   m_Name: Asset 2
   m_TagString: Peice
   m_Icon: {fileID: 0}
@@ -189,3 +191,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6330714, y: 0.64653563}
   m_EdgeRadius: 0
+--- !u!114 &4107447307737092382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624400470308143658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f99848a2c1705409ef19772ab1045c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
