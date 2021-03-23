@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 2179191951504486731}
   - component: {fileID: 1547559661662421753}
   - component: {fileID: 8075210289151825241}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asset 7
-  m_TagString: Untagged
+  m_TagString: Peice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
