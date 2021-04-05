@@ -21,10 +21,10 @@ public class FollowMouse : MonoBehaviour
         transform.position = new Vector2(Mathf.Round(mousePos.x), Mathf.Round(mousePos.y));
     
         if(Input.GetMouseButtonDown(0)){
-            //mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            //transform.position = new Vector2(Mathf.Round(mousePos.x), Mathf.Round(mousePos.y));
+            mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            transform.position = new Vector2(Mathf.Round(mousePos.x), Mathf.Round(mousePos.y));
         
-            //Instantiate(finalObject, transform.position, Quaternion.identity);
+            Instantiate(finalObject, transform.position, Quaternion.identity);
         
         }
     
