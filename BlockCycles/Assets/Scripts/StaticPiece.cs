@@ -13,6 +13,10 @@ public class StaticPiece : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //If sharing an edge with the grid, then become active
+        //Should static pieces blocks be considered a group, and any shared edge activates the group?
+        //If static piece collides with grid blocks then activate all children
+        //If static piece does not collide with grid blocks then deactivate all children
         
     }
 }
