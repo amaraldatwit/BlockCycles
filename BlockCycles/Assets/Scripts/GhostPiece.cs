@@ -8,8 +8,11 @@ public class GhostPiece : MonoBehaviour
     private Quaternion rotation;
     private Vector2 mousePos;
 
-    [SerializeField]
+    
     private int z;
+    public float x=(float)-2.5;
+    public float y= 1;
+
 
     // Update is called once per frame
     void Update()
@@ -17,12 +20,13 @@ public class GhostPiece : MonoBehaviour
         // Gets mouse position relative to main camera
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         // Rounds mouse position values to get whole numbers
-        transform.position = new Vector2(Mathf.Round(mousePos.x), Mathf.Round(mousePos.y));
+        transform.position = new Vector2(Mathf.Round(mousePos.x)+x, Mathf.Round(mousePos.y)+y);
         if(Input.GetKeyDown("r")){
             z=z+90;
             if(z==360) z = 0;
-            transform.rotation=new Quaternion(0,0,z,0);
-            rotation=new Quaternion(0,0,z,0);
+            rotation=Quaternion.Euler(0,0,z);
+            transform.rotation=rotation;
+            
         
         }
 
