@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,13 +18,13 @@ public class GameManager : MonoBehaviour
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 pos = new Vector2(mousePos.x, mousePos.y);
 
+        
+
         if(Input.GetKeyDown("1")){
                 if(activePiece!=null){
                     Destroy(activePiece);
                 }
-                //activePiece = Instantiate(ghostPieces[0], pos,Quaternion.identity);
-                activePiece = Instantiate(ghostPieces[0]);
-                activePiece.transform.position = Input.mousePosition;
+                activePiece = Instantiate(ghostPieces[0], pos,Quaternion.identity);
             }
         if(Input.GetKeyDown("2")){
             if(activePiece!=null){
